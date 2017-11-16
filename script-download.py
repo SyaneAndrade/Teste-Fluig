@@ -43,7 +43,7 @@ def main():
     #faz os downloads
     download_file(tags)
     time.sleep(5)
-    #Encerra o webdrive
+    #Encerra o webdriver
     driver.quit()
 
 if __name__ == '__main__':
