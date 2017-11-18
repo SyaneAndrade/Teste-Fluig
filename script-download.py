@@ -8,9 +8,9 @@ from selenium import webdriver
 """
 def ini_webdriver():
     chromeOptions = webdriver.ChromeOptions()
-    prefs = {"download.default_directory": "/home/syane/Documents/github/Teste-Fluig"}
+    prefs = {"download.default_directory": "C:\\Users\\Syane\\Documents\\github\\Teste-Fluig"}
     chromeOptions.add_experimental_option("prefs", prefs)
-    driver = webdriver.Chrome(executable_path=r'/home/syane/Documents/github/Teste-Fluig/chromedriver', chrome_options=chromeOptions)
+    driver = webdriver.Chrome(executable_path=r'C:\\Users\\Syane\\Documents\\github\\Teste-Fluig\\chromedriver.exe', chrome_options=chromeOptions)
     return driver
 
 """
