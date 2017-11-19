@@ -31,4 +31,4 @@ http://selenium-python.readthedocs.io/locating-elements.html para verificar outr
 <h2>Analise de dados apartir do arquivo Dados RH</h2>
 
 <p>Foi desenvolvido utilizando a ferramenta R studio, essa interface te permite importar dados, seja de extensões como txt até xlsx. Mais informações sobre funçoes e ferramentas do R poderá acessar : https://cran.r-project.org/doc/contrib/Landeiro-Introducao.pdf</p>
-<p>Tentei tirar o maximo de relações e informações das variaveis e valores que se encontra no arquivo de dados.</p>
+<p>Tentei tirar o maximo de relações e informações das variaveis e valores que se encontra no arquivo de dados. Você poderá visualizar os graficos que se encontra em: https://github.com/SyaneAndrade/Teste-Fluig/tree/master/Graficos</p>
