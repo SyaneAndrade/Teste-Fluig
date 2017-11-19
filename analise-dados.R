@@ -66,4 +66,3 @@ plot(time.spend.company, left, ylab = "Deixou a companhia", xlab = "Tempo",
      main="Grafico de dispersão: Tempo gasto na companhia x Deixou a companhia",
      col=ifelse(time.spend.company > 6,"blue", "red"))
 abline(v=mean(time.spend.company),col=c("green"))
-
