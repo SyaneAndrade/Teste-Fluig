@@ -66,3 +66,45 @@ plot(time.spend.company, left, ylab = "Deixou a companhia", xlab = "Tempo",
      main="Grafico de dispersão: Tempo gasto na companhia x Deixou a companhia",
      col=ifelse(time.spend.company > 6,"blue", "red"))
 abline(v=mean(time.spend.company),col=c("green"))
+
+#summary
+summary(Dados_RH)
+
+#Tabela de frequencias absolutas left
+freq_left <- table(Dados_RH$left)
+freq_left
+#Tabela de frequencia absolutas horas gastas
+freq_gastas <- table(Dados_RH$time_spend_company)
+freq_gastas
+#Tabela de frequencia absolutas projetos
+freq_projetos <- table(Dados_RH$number_project)
+freq_projetos
+#Tabela de frequencia absolutas departamento
+freq_dep <- table(Dados_RH$department)
+freq_dep
+#Tabela de frequencia absolutas salario
+freq_sal <- table(Dados_RH$salary)
+freq_sal
+#Tabela de promoções
+freq_promo <- table(Dados_RH$promotion_last_5years)
+freq_promo
+
+#Tabela de frequencia relativas
+freq_rel <- prop.table(Dados_RH$left)
+freq_rel
+#Porcentagem(100 * freq_rel_table)
+p_freq_rel <- 100 * prop.table(freq_rel)
+p_freq_rel
+#Sum
+freq <- c(freq, sum(freq))
+freq_rel <- c(freq_rel, sum(freq_rel))
+p_freq_rel <- c(p_freq_rel, sum(p_freq_rel))
+names(freq)[3] <- "Total"
+
+freq
+
+
+
+
+
+
