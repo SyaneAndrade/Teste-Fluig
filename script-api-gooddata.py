@@ -49,7 +49,7 @@ def main():
     convert_Json_csv(json.dumps(json_mount))
     #Envia o csv para o servidor
     with open('json_dados_rh.csv', 'rb') as CSV:
-        response = requests.put('https://secure-di.gooddata.com/project-uploads/nhyxxiw44gnthzmpu8jj92t6o2q5g491/DadosRH.csv', data=CSV, headers = { 'content-type': 'multipart/form-data'}, auth=HTTPBasicAuth('syane_andrade@outlook.com', 'poiqwe211091'))
+        response = requests.put('https://secure-di.gooddata.com/project-uploads/nhyxxiw44gnthzmpu8jj92t6o2q5g491/DadosRH.csv', data=CSV, headers = { 'content-type': 'multipart/form-data'}, auth=HTTPBasicAuth('EMAIL', 'senha'))
         print(response.status_code)
 
 if __name__ == '__main__':
